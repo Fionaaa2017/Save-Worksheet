@@ -1,0 +1,6 @@
+Dim strPath, strName, strDate As String
+strPath = Inbound.Range("AW15") + "\LogSheet Records"
+
+strName = Inbound.Range("A34")
+strDate = Format(Date, "mmm dd yy")
+ActiveWorkbook.SaveAs FileName:=strPath + "\" + strName + " Worksheet " + strDate + ".xlsm", FileFormat:=52
